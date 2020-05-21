@@ -2,9 +2,6 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 
 
 const headerStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 1,
-  },
   navbar: {
     backgroundColor: '#3F51B5',
   },

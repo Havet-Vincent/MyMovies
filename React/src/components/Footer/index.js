@@ -27,7 +27,7 @@ const Footer = () => {
         </Tooltip>
       </Toolbar>
       <Typography variant="body2" color="textSecondary" align="center" className={classes.footerCopyright}>
-        {'© MyMovies'}
+        {'© MyMovies '}
         {new Date().getFullYear()}
       </Typography>
     </Container > 
