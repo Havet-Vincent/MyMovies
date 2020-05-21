@@ -5,6 +5,9 @@ const headerStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
   },
+  navbar: {
+    backgroundColor: '#3F51B5',
+  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -76,6 +79,10 @@ const headerStyles = makeStyles((theme) => ({
       display: 'block',
       marginTop: theme.spacing(2),
     },
+  },
+  logo: {
+    width: '120px',
+    height: 'auto',
   },
 }));
 

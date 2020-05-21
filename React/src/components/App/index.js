@@ -2,21 +2,27 @@
 import React from 'react';
 
 // == Import components
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { CssBaseline, Container } from '@material-ui/core';
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
 
 // == Import
-import './styles.css';
+import appStyles from './appStyles';
 
 // == Composant
-const App = () => (
-  <div className="app">
+const App = () => {
+  const classes = appStyles();
+  return (
+    <>
     <CssBaseline />
-    <Header />
-    <Footer />
-  </div>
-);
+    <Container className={classes.wrapper}> 
+      <Header />
+      <Footer />
+    </Container>
+    </>
+  );
+};
+
 
 // == Export
 export default App;

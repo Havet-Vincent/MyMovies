@@ -16,6 +16,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle'
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Button from '@material-ui/core/Button';
 
+// == Import images
 import Logo from 'src/assets/logo.png';
 
 // == Import styles
@@ -91,7 +92,8 @@ const Header = () => {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+    <AppBar position="fixed" className={classes.navbar} color="transparent">
+
         <Toolbar>
         <div className={classes.title}>
             <Tooltip title="Retour acceuil" aria-label="retour-accueil" placement="bottom">
