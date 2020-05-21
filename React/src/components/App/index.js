@@ -4,6 +4,7 @@ import React from 'react';
 // == Import components
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from 'src/components/Header';
+import Footer from 'src/components/Footer';
 
 // == Import
 import './styles.css';
@@ -13,6 +14,7 @@ const App = () => (
   <div className="app">
     <CssBaseline />
     <Header />
+    <Footer />
   </div>
 );
 
