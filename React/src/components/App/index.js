@@ -21,7 +21,6 @@ const App = () => {
     <CssBaseline />
     <Container className={classes.wrapper}> 
       <Header />
-      <SignIn />
       <Footer />
     </Container>
     </>
