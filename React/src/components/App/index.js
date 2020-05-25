@@ -7,6 +7,7 @@ import { CssBaseline, Container } from '@material-ui/core';
 import Header from 'src/components/Header';
 import SignUp from 'src/components/SignUp';
 import SignIn from 'src/components/SignIn';
+import Home from 'src/components/Pages/Home';
 import Footer from 'src/components/Footer';
 
 // == Import
@@ -21,6 +22,7 @@ const App = () => {
     <CssBaseline />
     <Container className={classes.wrapper}> 
       <Header />
+      <Home />
       <Footer />
     </Container>
     </>
