@@ -17,6 +17,7 @@ import {
   CssBaseline,
   Container,
   IconButton,
+  Box,
 } from '@material-ui/core';
 
 import FavoriteIcon from '@material-ui/icons/Favorite';
@@ -28,7 +29,7 @@ import Img from 'src/assets/images/5gJOu3t2QrznuJqjCG7FQDMI76t.jpg';
 // == Import styles
 import homeStyles from './homeStyles';
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = [1, 2, 3, 4];
 
 
 // == Composant
@@ -41,24 +42,22 @@ const Home = ({
   return (
     <>
       <main>
-        <CssBaseline />
-        <Container maxWidth="sm" className={classes.heroContent}>
-        <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-          Films
+        <Container maxWidth="sm" className={classes.content}>
+        <Typography component="h1" variant="h4" align="center" color="textPrimary" gutterBottom>
+          Mes Médias
         </Typography>
         </Container>
         <Container className={classes.cardGrid} maxWidth="md">
-          {/* film unit */}
+          {/* films unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     component="img"
-                    alt="Gladiator"
+                    alt="Films"
                     image={Img}
-                    title="gladiator"
+                    title="Films"
                     action={
                       <IconButton aria-label="settings">
                         <MoreVertIcon />
@@ -67,23 +66,123 @@ const Home = ({
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h6" component="h2">
-                      Gladiator
+                      Films
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <IconButton aria-label="add to favorites">
-                      <FavoriteIcon />
-                    </IconButton>
-                    <IconButton aria-label="play/pause">
-                      <PlayArrowIcon className={classes.playIcon} />
-                    </IconButton>                 
-                    <IconButton aria-label="settings">
-                      <MoreVertIcon />
-                    </IconButton>
-                  </CardActions>
                 </Card>
               </Grid>
-            ))}
+
+        
+              <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    component="img"
+                    alt="Films"
+                    image={Img}
+                    title="Films"
+                    action={
+                      <IconButton aria-label="settings">
+                        <MoreVertIcon />
+                      </IconButton>
+                    }
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h6" component="h2">
+                      Films Ginette
+                    </Typography>
+                  </CardContent>
+                </Card>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    component="img"
+                    alt="Films"
+                    image={Img}
+                    title="Films"
+                    action={
+                      <IconButton aria-label="settings">
+                        <MoreVertIcon />
+                      </IconButton>
+                    }
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h6" component="h2">
+                      Séries
+                    </Typography>
+                  </CardContent>
+                </Card>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    component="img"
+                    alt="Films"
+                    image={Img}
+                    title="Films"
+                    action={
+                      <IconButton aria-label="settings">
+                        <MoreVertIcon />
+                      </IconButton>
+                    }
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h6" component="h2">
+                      Séries Ginette
+                    </Typography>
+                  </CardContent>
+                </Card>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    component="img"
+                    alt="Films"
+                    image={Img}
+                    title="Films"
+                    action={
+                      <IconButton aria-label="settings">
+                        <MoreVertIcon />
+                      </IconButton>
+                    }
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h6" component="h2">
+                      Musiques
+                    </Typography>
+                  </CardContent>
+                </Card>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    component="img"
+                    alt="Films"
+                    image={Img}
+                    title="Films"
+                    action={
+                      <IconButton aria-label="settings">
+                        <MoreVertIcon />
+                      </IconButton>
+                    }
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h6" component="h2">
+                      Photos
+                    </Typography>
+                  </CardContent>
+                </Card>
+                </Grid>
+
           </Grid>
         </Container>   
       </main>

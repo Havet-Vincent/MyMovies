@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const homeStyles = makeStyles((theme) => ({
+const moviesStyles = makeStyles((theme) => ({
 
-  content: {
+  heroContent: {
     padding: theme.spacing(8, 0, 6),
     marginTop: '70px',
   },
@@ -30,4 +30,4 @@ const homeStyles = makeStyles((theme) => ({
 
 }));
 
-export default homeStyles;
+export default moviesStyles;
