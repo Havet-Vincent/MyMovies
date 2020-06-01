@@ -24,6 +24,7 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 import Img from 'src/assets/images/5gJOu3t2QrznuJqjCG7FQDMI76t.jpg';
+import Movies from 'src/Datas/movies';
 
 // == Import styles
 import moviesStyles from './moviesStyles';

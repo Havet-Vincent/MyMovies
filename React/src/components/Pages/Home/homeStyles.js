@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const homeStyles = makeStyles((theme) => ({
 
-  heroContent: {
+  content: {
     padding: theme.spacing(8, 0, 6),
     marginTop: '70px',
   },
